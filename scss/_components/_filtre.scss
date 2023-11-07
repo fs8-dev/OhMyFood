@@ -1,0 +1,45 @@
+@import "../_utils/variables";
+
+.fonctionnement-container {
+
+    &__filtres {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+.filtre-restaurants {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    height: 70px;
+    background-color: $grey-background;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    &-blocNum {
+        position: relative;
+        margin-left: -15px;
+        height: 27px;
+        width: 27px;
+        border-radius: 28px;
+        background-color: $primary-color;
+    }
+
+    &-num {
+        color: white;
+        margin: 4px 0 0 9px;
+    }
+
+    &-text {
+        color: black;
+    }
+
+    .fas.fa-store.icone {
+        color: $primary-color;
+    }
+
+}
