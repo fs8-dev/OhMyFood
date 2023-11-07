@@ -1,0 +1,48 @@
+@import "../_utils/variables";
+@import "../_components/btn-heart";
+
+.restaurants {
+    display: flex;
+    justify-content: space-between;
+
+    &-card {
+        position: relative;
+        width: 350px;
+        height: 250px;
+        border: 20px;
+        background-color: white;
+        margin-right: 25px;
+
+        img {
+            height: 100%;
+            width: 100%;
+            max-height: 175px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+        }
+
+        &-details {
+            padding-left: 10px;
+            line-height: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+        }
+    }
+}
+
+.new {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    background-color: $third-color;
+    color: $white;
+    padding: 7px;
+
+    &-text {
+        color: $dark-green;
+        font-weight: bold;
+    }
+}
