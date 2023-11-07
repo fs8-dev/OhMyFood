@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+
 html, body {
     padding: 0px;
     margin: 0px;
     height: 100%;
     width: 100%;
+}
+
+* {
+    font-family: $text-font;
 }
 
 a {

@@ -3,18 +3,24 @@
     background-color: $footer-background;
     color: white;
 
-    &__title-footer {
-        margin-bottom: 10px;
+    .title-footer {
+        margin-top: 0px;
+        margin-bottom: 16px;
+        font-family: $title-font;
     }
 
-    &__nav-footer {
+    .nav-footer {
         @include flex(column);
         align-items: flex-start;
         gap: 7px;
+        list-style-type: none;
+        padding-left: 0;
     }
 
-    &__icone-footer {
+    .icone-footer {
         width: 11px;
         height: 13px;
     }
+
+    
 }

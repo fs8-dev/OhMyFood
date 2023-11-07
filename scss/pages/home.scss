@@ -1,0 +1,24 @@
+@import "../_utils/variables";
+@import "../_layout/global";
+@import "../_utils/mixins";
+@import "../_layout/header"; 
+@import "../_layout/footer";
+@import "../_components/btn-heart";
+@import "../_components/carte";
+@import "../_components/filtre";
+
+
+.fonctionnement-container {
+    background-color: $grey-background;
+}
+
+.restaurants-container {
+    background-color: $grey-background;
+    padding: 54px 18px;
+
+    .restaurants {
+        @include flex(column);
+        gap: 18px;
+    }
+
+}
