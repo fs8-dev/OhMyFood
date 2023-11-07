@@ -1,0 +1,43 @@
+@import "../_utils/variables";
+
+.btn-heart {
+    padding-right: 10px;
+    font-weight: normal;
+    font-size: 15px;
+
+    &_icone {
+        position: absolute;
+        right: 25px;
+        bottom: 25px;
+        opacity: 1;
+        transition: ease-in-out 200ms;
+
+        &:hover {
+            opacity: 0;
+        }
+
+    }
+
+    &_effect {
+        position: absolute;
+        right: 5px;
+        bottom: 5px;
+        /*background: linear-gradient(356deg,$purple 10%, $pink 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;*/
+        background: -webkit-linear-gradient(210deg, #9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 0;
+        transition-duration: 300ms;
+        transform: scale(1.15);
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+        }
+
+    }
+
+}
