@@ -1,8 +1,11 @@
 @import "../_utils/variables";
 
 .fonctionnement-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-    &__filtres {
+    .fonctionnement-container-filtres {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -14,7 +17,7 @@
 .filtre-restaurants {
     display: flex;
     align-items: center;
-    width: 330px;
+    width: 100%;
     height: 70px;
     background-color: $grey-background;
     border-radius: 20px;
