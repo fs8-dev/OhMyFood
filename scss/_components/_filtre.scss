@@ -11,7 +11,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        flex-wrap: wrap;
     }
 
 }
@@ -25,7 +24,6 @@
     box-shadow: 0px 4px 15px 0px $grey-background;
     border-radius: 20px;
     margin-bottom: 20px;
-
 
     &-blocNum {
         position: relative;
