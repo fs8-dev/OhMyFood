@@ -9,14 +9,37 @@
 @import "../_components/btn-pink";
 
 
+.location-container {
+    background-color: $location;
+
+    &-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-icone {
+        padding: 10px;
+    }
+}
+
+h1, h2 {
+    font-size: 24px;
+}
+
 .reservez-container {
     background-color: $grey-background;
+    text-align: center;
+    padding: 40px 34px;
+
+    .reservez-container-text {
+        font-size: 18px;
+    }
 }
 
 .fonctionnement-container {
     background-color: white;
     padding: 54px 18px;
-
     .fonctionnement-container-filtres {
         @include flex(column);
         gap: 18px;

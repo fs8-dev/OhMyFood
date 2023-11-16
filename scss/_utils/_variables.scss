@@ -6,9 +6,10 @@ $third-color: #99E2D0;
 $grey-background: #F6F6F6;
 $footer-background: #353535;
 $dark-green: #008766;
+$location: #EAEAEA;
 
 /****** Gradient ***********/
-$gradient-color: $primary-color, $secondary-color;
+$gradient-color: linear-gradient($secondary-color, $primary-color);
 
 /****** Font Family ***********/
 $title-font: 'Shrikhand', serif;
