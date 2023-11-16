@@ -10,6 +10,7 @@
 
 .fonctionnement-container {
     background-color: white;
+    padding: 54px 18px;
 
     .fonctionnement-container-filtres {
         @include flex(column);
