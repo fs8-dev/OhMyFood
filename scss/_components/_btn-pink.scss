@@ -2,11 +2,14 @@
 @import "../_utils/variables";
 
 .header-btn {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 220px;
     height: 50px;
     border-radius: 25px;
     background: $gradient-color;
+    color: white;
     margin: auto;
 }
 

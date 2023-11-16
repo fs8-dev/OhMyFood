@@ -8,6 +8,10 @@
 @import "../_components/filtre";
 
 
+.reservez-container {
+    background-color: $grey-background;
+}
+
 .fonctionnement-container {
     background-color: white;
     padding: 54px 18px;
@@ -15,7 +19,6 @@
     .fonctionnement-container-filtres {
         @include flex(column);
         gap: 18px;
-        width: 100%;
     }
 }
 
