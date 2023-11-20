@@ -33,6 +33,7 @@ a {
   padding: 0px 19px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   margin: auto;
+  font-size: 16px;
 }
 
 .main-btn:hover {
@@ -51,6 +52,14 @@ a {
 .logo-img {
   width: 190px;
   height: auto;
+}
+
+.arrow-left {
+  font-size: 30px;
+  color: #353535;
+  position: absolute;
+  left: 17px;
+  gap: 42px;
 }
 
 .footer {
@@ -170,6 +179,7 @@ a {
   padding: 0px 19px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   margin: auto;
+  font-size: 16px;
 }
 
 .main-btn:hover {
@@ -191,6 +201,7 @@ a {
 
 h1, h2 {
   font-size: 24px;
+  font-weight: 700;
 }
 
 .reservez-container {

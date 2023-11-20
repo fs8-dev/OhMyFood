@@ -15,6 +15,12 @@
         width: 190px;
         height: auto;
     }
-
 }
 
+.arrow-left {
+    font-size: 30px;
+    color: $footer-background;
+    position: absolute;
+    left: 17px;
+    gap: 42px;
+}
