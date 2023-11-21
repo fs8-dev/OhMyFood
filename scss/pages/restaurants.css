@@ -105,7 +105,8 @@ a {
 .menu-header .menu-restaurant {
   font-size: 28px;
   font-weight: 400;
-  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  font-family: "Shrikhand";
   margin: 0;
 }
 
