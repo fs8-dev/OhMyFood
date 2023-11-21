@@ -24,3 +24,78 @@ h3,
 p {
     margin: 0px;
 }
+
+.menu-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 35px 5px;
+    border-radius: 25px 25px 0px 0px;
+    background-color: $grey-background;
+    margin-top: -50px;
+}
+
+.menu-header {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .menu-restaurant {
+        font-size: 28px;
+        font-weight: 400;
+        font-style: italic;
+        font-family: 'Shrikhand';
+        margin: 0;
+    }
+}
+
+.menu-order {
+    padding: 25px 5px;
+    gap: 40px;
+
+    .menu-order-title {
+        font-size: 16px;
+        font-weight: 300;
+
+        &::after {
+            content: "";
+            display: block;
+            border-bottom: 3px solid $third-color;
+            width: 40px;
+            position: relative;
+            margin-top: 5px;
+        }
+    }
+
+    .menu-details {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .anim1 {
+        animation: anim-card 500ms ease-in-out;
+    }
+
+    .anim2 {
+        animation: anim-card 1s ease-in-out;
+    }
+
+    .anim3 {
+        animation: anim-card 1.5s ease-in-out;
+    }
+
+}
+
+@keyframes anim-card {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

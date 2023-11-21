@@ -85,24 +85,54 @@ a {
   height: 13px;
 }
 
-/****** Color ***********/
-/****** Gradient ***********/
-/****** Font Family ***********/
-.btn-heart {
-  padding-right: 10px;
+.heart {
   font-weight: normal;
   font-size: 15px;
 }
+.heart__effect {
+  display: none;
+  opacity: 1;
+  animation: anim-heart 600ms ease-in-out;
+}
+.heart:hover .heart__effect {
+  display: block;
+}
+.heart:hover .heart__icone {
+  display: none;
+}
 
-/****** Color ***********/
-/****** Gradient ***********/
-/****** Font Family ***********/
-.btn-heart {
-  padding-right: 10px;
+@keyframes anim-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.heart {
   font-weight: normal;
   font-size: 15px;
 }
+.heart__effect {
+  display: none;
+  opacity: 1;
+  animation: anim-heart 600ms ease-in-out;
+}
+.heart:hover .heart__effect {
+  display: block;
+}
+.heart:hover .heart__icone {
+  display: none;
+}
 
+@keyframes anim-heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .restaurants-card {
   position: relative;
   height: 250px;

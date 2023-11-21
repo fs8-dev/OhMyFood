@@ -1,7 +1,31 @@
-@import "../_utils/variables";
-
-.btn-heart {
-    padding-right: 10px;
+.heart {
     font-weight: normal;
     font-size: 15px;
+
+    &__effect {
+        display: none;
+        opacity: 1;
+        animation: anim-heart 600ms ease-in-out;
+    }
+
+    &:hover {
+        .heart__effect {
+            display: block;
+        }
+
+        .heart__icone {
+            display: none;
+        }
+    }
+
+}
+
+@keyframes anim-heart {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }

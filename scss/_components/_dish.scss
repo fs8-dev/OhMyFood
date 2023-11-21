@@ -1,94 +1,40 @@
-.menu-container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 35px 5px;
-    border-radius: 25px 25px 0px 0px;
-    background-color: $grey-background;
-    margin-top: -50px;  
-}
-
-.menu-header {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .menu-restaurant {
-        font-size: 28px;
-        font-weight: 400;
-        font-style: italic;
-        font-family: 'Shrikhand';
-        margin: 0;
-    }
-}
-
-.menu-order {
-    padding: 25px 5px;
-    gap: 40px;
-
-    .menu-order-title {
-        font-size: 16px;
-        font-weight: 300;
-
-        &::after {
-            content: "";
-            display: block;
-            border-bottom: 3px solid $third-color;
-            width: 40px;
-            position: relative;
-            margin-top: 5px;
-        }
-    }
-
-    .menu-details {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-}
-
 .card {
-    display: flex;
+    @include flex(row);
     justify-content: space-between;
     align-items: center;
     border-radius: 15px;
     background-color: white;
-    padding: 15px;
-    overflow: hidden;
 
-    &__left {
-        white-space: nowrap;
-        overflow: hidden;
+    &_left {
+        @include flex(column);
         gap: 5px;
+        padding: 15px;
     }
 
-    &__title {
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
-    }
-
-    &__subtitle {
+    &_subtitle,
+    &_title {
         font-weight: 300;
         text-overflow: ellipsis;
         overflow: hidden;
+        white-space: nowrap;
     }
 
-    &__right {
-        display: flex;
+    &_right {
+        @include flex(row);
         align-items: end;
-        gap: 40px;
     }
 
-    &__price {
-        display: flex;
+    &_price {
+        @include flex(row);
         align-items: flex-end;
         font-weight: 700;
+        width: 40px;
+        padding: 15px;
+
     }
 
-    &__check {
+    &_check {
+
         height: 100%;
         width: 50px;
         padding-top: 10px;
