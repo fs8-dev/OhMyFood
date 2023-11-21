@@ -3,7 +3,6 @@
 .restaurants-card {
     position: relative;
     height: 250px;
-    border-radius: 20px;
 
     img {
         height: 100%;
@@ -20,6 +19,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: white;
+        border-radius: 0 0 15px 15px;
     }
 
     .new {
