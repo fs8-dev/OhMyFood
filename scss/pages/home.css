@@ -107,6 +107,7 @@ a {
   position: relative;
   height: 250px;
   background-color: white;
+  border-radius: 20px;
 }
 .restaurants-card img {
   height: 100%;
