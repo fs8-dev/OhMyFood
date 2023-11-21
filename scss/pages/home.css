@@ -187,19 +187,25 @@ a {
   box-shadow: 0px 8px 7px 1px rgba(0, 0, 0, 0.25);
 }
 
-.location-container {
-  background-color: #EAEAEA;
-}
-.location-container-link {
+.form-container {
   display: flex;
+  background-color: #EAEAEA;
+  height: 50px;
   justify-content: center;
   align-items: center;
+  gap: 17px;
 }
-.location-container-icone {
-  padding: 10px;
+.form-container input {
+  background: none;
+  border: none;
+  padding: 15px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 24px;
   font-weight: 700;
 }
