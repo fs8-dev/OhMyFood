@@ -106,6 +106,7 @@ a {
 .restaurants-card {
   position: relative;
   height: 250px;
+  background-color: white;
 }
 .restaurants-card img {
   height: 100%;
