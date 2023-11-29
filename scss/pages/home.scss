@@ -72,9 +72,11 @@ h2 {
     }
 
     .fonctionnement-container {
-        padding: 0px 180px;
+        padding: 30px 180px;
 
-        &__filtres {
+        .fonctionnement-container-filtres {
+            display: flex !important;
+            flex-direction: row !important;
             justify-content: space-between;
         }
 
@@ -85,17 +87,19 @@ h2 {
     }
 
     .restaurants-container {
-        padding: 0px 180px;
+        padding: 30px 180px;
 
+        .restaurants {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 28px !important;
+        }
 
         .restaurants-card {
             justify-content: space-between;
             flex-wrap: wrap;
         }
 
-        a {
-            width: 45%;
-        }
     }
 
 }

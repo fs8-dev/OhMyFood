@@ -361,22 +361,26 @@ h2 {
     font-size: 40px;
   }
   .fonctionnement-container {
-    padding: 0px 180px;
+    padding: 30px 180px;
   }
-  .fonctionnement-container__filtres {
+  .fonctionnement-container .fonctionnement-container-filtres {
+    display: flex !important;
+    flex-direction: row !important;
     justify-content: space-between;
   }
   .fonctionnement-container .filtre-restaurants {
     width: 30%;
   }
   .restaurants-container {
-    padding: 0px 180px;
+    padding: 30px 180px;
+  }
+  .restaurants-container .restaurants {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 28px !important;
   }
   .restaurants-container .restaurants-card {
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-  .restaurants-container a {
-    width: 45%;
   }
 }/*# sourceMappingURL=home.css.map */
