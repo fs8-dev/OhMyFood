@@ -24,3 +24,25 @@
 
     
 }
+
+@media screen and (min-width: 769px) {
+
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 30px 25px !important;
+
+        .title-footer {
+            margin-left: 110px;
+        }
+
+        .nav-footer {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            white-space: nowrap !important;
+            gap: 15px !important;
+        }
+    }
+
+}

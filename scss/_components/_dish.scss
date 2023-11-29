@@ -1,22 +1,27 @@
 .card {
     @include flex(row);
     justify-content: space-between;
-    align-items: center;
     border-radius: 15px;
+    overflow: hidden;
+    padding: 10px 0px 10px 20px;
     background-color: white;
 
     &_left {
         @include flex(column);
-        gap: 5px;
-        padding: 15px;
+        white-space: nowrap;
+        overflow: hidden;
     }
 
-    &_subtitle,
     &_title {
+        margin-bottom: 5px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &_subtitle {
         font-weight: 300;
         text-overflow: ellipsis;
         overflow: hidden;
-        white-space: nowrap;
     }
 
     &_right {
@@ -28,13 +33,12 @@
         @include flex(row);
         align-items: flex-end;
         font-weight: 700;
-        width: 40px;
-        padding: 15px;
-
     }
 
     &_check {
-
+        @include flex(column);
+        justify-content: center;
+        align-items: center;
         height: 100%;
         width: 50px;
         padding-top: 10px;

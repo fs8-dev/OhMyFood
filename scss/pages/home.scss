@@ -7,6 +7,7 @@
 @import "../_components/carte";
 @import "../_components/filtre";
 @import "../_components/btn-pink";
+@import "../_components/loader";
 
 .form-container {
     display: flex;
@@ -57,6 +58,44 @@ h2 {
     .restaurants {
         @include flex(column);
         gap: 18px;
+    }
+
+}
+
+@media screen and (min-width:769px) {
+
+    .reservez-container {
+
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .fonctionnement-container {
+        padding: 0px 180px;
+
+        &__filtres {
+            justify-content: space-between;
+        }
+
+        .filtre-restaurants {
+            width: 30%;
+        }
+
+    }
+
+    .restaurants-container {
+        padding: 0px 180px;
+
+
+        .restaurants-card {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        a {
+            width: 45%;
+        }
     }
 
 }
