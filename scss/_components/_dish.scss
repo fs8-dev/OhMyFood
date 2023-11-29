@@ -6,6 +6,12 @@
     padding: 10px 0px 10px 20px;
     background-color: white;
 
+    &:hover  {
+        .card_check {
+            margin-right: 0;
+        }
+    }
+
     &_left {
         @include flex(column);
         white-space: nowrap;
@@ -33,6 +39,7 @@
         @include flex(row);
         align-items: flex-end;
         font-weight: 700;
+        padding: 0 12px;
     }
 
     &_check {
@@ -47,5 +54,8 @@
         color: white;
         background-color: $third-color;
         border-radius: 0px 15px 15px 0px;
+        //display: none;
+        margin-right: -50px;
+        transition: all 1s;   
     }
 }
