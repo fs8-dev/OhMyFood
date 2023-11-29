@@ -28,17 +28,17 @@
 @media screen and (min-width: 769px) {
 
     footer {
-        display: flex;
-        flex-direction: row-reverse;
+        @include flex(row-reverse);
         padding: 30px 25px !important;
+        gap: 15px;
+        align-items: center;
 
         .title-footer {
-            margin-left: 110px;
+            margin-bottom: 0 !important;
         }
 
         .nav-footer {
-            display: flex !important;
-            flex-direction: row !important;
+            @include flex(row !important);
             align-items: center !important;
             white-space: nowrap !important;
             gap: 15px !important;
