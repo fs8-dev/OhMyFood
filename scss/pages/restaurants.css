@@ -156,6 +156,7 @@ a {
 .heart {
   font-weight: normal;
   font-size: 15px;
+  margin-right: 10px;
 }
 .heart__effect {
   display: none;

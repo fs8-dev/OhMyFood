@@ -105,6 +105,7 @@ a {
 .heart {
   font-weight: normal;
   font-size: 15px;
+  margin-right: 10px;
 }
 .heart__effect {
   display: none;
@@ -129,6 +130,7 @@ a {
 .heart {
   font-weight: normal;
   font-size: 15px;
+  margin-right: 10px;
 }
 .heart__effect {
   display: none;
@@ -258,6 +260,15 @@ a {
   animation: pulse 1.5s linear infinite;
 }
 
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
 @keyframes pulse {
   0% {
     transform: scale(1, 1);
@@ -281,27 +292,18 @@ a {
   z-index: 999;
   border: 1px solid #99E2D0;
   box-sizing: border-box;
-  animation: animloader 0.75s linear infinite alternate;
+  animation: anim-loader 0.75s linear infinite alternate;
   color: #9356DC;
   border-radius: 0 0 4px 4px;
   transform: perspective(140px) rotateX(-45deg);
 }
 
-@keyframes animloader {
+@keyframes anim-loader {
   0% {
     box-shadow: 0 0 inset;
   }
   100% {
     box-shadow: 0 -70px inset;
-  }
-}
-@keyframes fade {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -100;
   }
 }
 .form-container {
