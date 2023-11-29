@@ -9,6 +9,11 @@ html, body {
   width: 100%;
 }
 
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -90,12 +95,14 @@ a {
     display: flex;
     flex-direction: row-reverse;
     padding: 30px 25px !important;
+    gap: 15px;
+    align-items: center;
   }
   footer .title-footer {
-    margin-left: 110px;
+    margin-bottom: 0 !important;
   }
   footer .nav-footer {
-    display: flex !important;
+    display: flex;
     flex-direction: row !important;
     align-items: center !important;
     white-space: nowrap !important;
@@ -110,6 +117,9 @@ a {
   overflow: hidden;
   padding: 10px 0px 10px 20px;
   background-color: white;
+}
+.card:hover .card_check {
+  margin-right: 0;
 }
 .card_left {
   display: flex;
@@ -137,6 +147,7 @@ a {
   flex-direction: row;
   align-items: flex-end;
   font-weight: 700;
+  padding: 0 12px;
 }
 .card_check {
   display: flex;
@@ -151,6 +162,8 @@ a {
   color: white;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
+  margin-right: -50px;
+  transition: all 1s;
 }
 
 .heart {
@@ -201,11 +214,6 @@ a {
 .image-menu {
   width: 100%;
   height: 300px;
-  display: flex;
-  justify-content: center;
-}
-.image-menu .img {
-  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

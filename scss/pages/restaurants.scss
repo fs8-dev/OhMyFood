@@ -10,14 +10,7 @@
 .image-menu {
     width: 100%;
     height: 300px;
-    display: flex;
-    justify-content: center;
-
-    .img {
-        width: 100%;
-        object-fit: cover;
-    }
-
+    object-fit: cover;
 }
 
 h3,
