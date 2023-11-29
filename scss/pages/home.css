@@ -9,6 +9,11 @@ html, body {
   width: 100%;
 }
 
+main {
+  max-width: 1440px;
+  margin: auto;
+}
+
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -90,12 +95,14 @@ a {
     display: flex;
     flex-direction: row-reverse;
     padding: 30px 25px !important;
+    gap: 15px;
+    align-items: center;
   }
   footer .title-footer {
-    margin-left: 110px;
+    margin-bottom: 0 !important;
   }
   footer .nav-footer {
-    display: flex !important;
+    display: flex;
     flex-direction: row !important;
     align-items: center !important;
     white-space: nowrap !important;
@@ -254,9 +261,9 @@ a {
   z-index: 999;
   width: 100%;
   height: 100%;
-  animation: fade 1s 1s forwards;
+  animation: fade 3s 3s forwards;
 }
-.loader-container h1 {
+.loader-container p {
   animation: pulse 1.5s linear infinite;
 }
 
@@ -361,7 +368,7 @@ h2 {
     font-size: 40px;
   }
   .fonctionnement-container {
-    padding: 30px 180px;
+    padding: 30px 10%;
   }
   .fonctionnement-container .fonctionnement-container-filtres {
     display: flex !important;
@@ -372,7 +379,7 @@ h2 {
     width: 30%;
   }
   .restaurants-container {
-    padding: 30px 180px;
+    padding: 30px 10%;
   }
   .restaurants-container .restaurants {
     display: grid !important;
