@@ -111,8 +111,12 @@ a {
 }
 .heart {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   margin-right: 10px;
+  color: transparent;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .heart__effect {
   display: none;
@@ -136,8 +140,12 @@ a {
 }
 .heart {
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   margin-right: 10px;
+  color: transparent;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 .heart__effect {
   display: none;
