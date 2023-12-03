@@ -1,7 +1,11 @@
 .heart {
     font-weight: normal;
-    font-size: 15px;
+    font-size: 20px;
     margin-right: 10px;
+    color: transparent;
+    background: linear-gradient(0deg, $primary-color, $secondary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
 
     &__effect {
         display: none;
