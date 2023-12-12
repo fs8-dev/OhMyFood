@@ -37,8 +37,8 @@ p {
     .menu-restaurant {
         font-size: 28px;
         font-weight: 400;
-        font-style: italic;
-        font-family: 'Shrikhand';
+        font-style: normal;
+        font-family: $title-font;
         margin: 0;
     }
 }
@@ -91,6 +91,16 @@ p {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.card_title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card_subtitle {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 @media screen and (min-width:769px) {

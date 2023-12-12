@@ -10,7 +10,7 @@ html, body {
 }
 
 main {
-  max-width: 1440px;
+  max-width: 2560px;
   margin: auto;
 }
 
@@ -133,7 +133,6 @@ a {
   overflow: hidden;
 }
 .card_subtitle {
-  font-weight: 300;
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -170,15 +169,18 @@ a {
   font-weight: normal;
   font-size: 20px;
   margin-right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.heart__effect {
+  display: none;
   color: transparent;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
-}
-.heart__effect {
-  display: none;
   opacity: 1;
-  animation: anim-heart 600ms ease-in-out;
+  animation: anim-heart 200ms ease-in-out;
 }
 .heart:hover .heart__effect {
   display: block;
@@ -246,8 +248,8 @@ p {
 .menu-header .menu-restaurant {
   font-size: 28px;
   font-weight: 400;
-  font-style: italic;
-  font-family: "Shrikhand";
+  font-style: normal;
+  font-family: "Shrikhand", serif;
   margin: 0;
 }
 
@@ -292,6 +294,16 @@ p {
     transform: translateY(0);
   }
 }
+.card_title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card_subtitle {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 @media screen and (min-width: 769px) {
   .menu-container {
     width: 70%;
