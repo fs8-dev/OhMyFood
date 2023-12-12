@@ -10,7 +10,7 @@ html, body {
 }
 
 main {
-  max-width: 1440px;
+  max-width: 2560px;
   margin: auto;
 }
 
@@ -113,15 +113,18 @@ a {
   font-weight: normal;
   font-size: 20px;
   margin-right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.heart__effect {
+  display: none;
   color: transparent;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
-}
-.heart__effect {
-  display: none;
   opacity: 1;
-  animation: anim-heart 600ms ease-in-out;
+  animation: anim-heart 200ms ease-in-out;
 }
 .heart:hover .heart__effect {
   display: block;
@@ -142,15 +145,18 @@ a {
   font-weight: normal;
   font-size: 20px;
   margin-right: 10px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.heart__effect {
+  display: none;
   color: transparent;
   background: linear-gradient(0deg, #9356DC, #FF79DA);
   background-clip: text;
   -webkit-background-clip: text;
-}
-.heart__effect {
-  display: none;
   opacity: 1;
-  animation: anim-heart 600ms ease-in-out;
+  animation: anim-heart 200ms ease-in-out;
 }
 .heart:hover .heart__effect {
   display: block;
@@ -342,6 +348,16 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 300;
+}
+
 .reservez-container {
   background-color: #F6F6F6;
   text-align: center;
@@ -349,6 +365,8 @@ h2 {
 }
 .reservez-container .reservez-container-text {
   font-size: 18px;
+  font-weight: 300;
+  color: #353535;
 }
 
 .fonctionnement-container {

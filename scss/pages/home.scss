@@ -31,6 +31,16 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
 .reservez-container {
     background-color: $grey-background;
     text-align: center;
@@ -38,6 +48,8 @@ h2 {
 
     .reservez-container-text {
         font-size: 18px;
+        font-weight: 300;
+        color: $footer-background;
     }
 }
 
